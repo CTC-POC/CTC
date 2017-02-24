@@ -11,7 +11,7 @@
 <c:url value="${product.url}/configuratorPage/${configuratorType}" var="configureProductUrl"/>
 
 <product:addToCartTitle/>
-
+<!--
 <form:form method="post" id="configureForm" class="configure_form" action="${configureProductUrl}">
 <c:if test="${product.purchasable}">
 	<input type="hidden" maxlength="3" size="1" id="qty" name="qty" class="qty js-qty-selector-input" value="1">
@@ -42,6 +42,7 @@
 	</c:choose>
 </c:if>
 </form:form>
+-->
 
 
 
@@ -76,7 +77,7 @@
 		</form:form>
 	</div>
 	<div class="col-md-6 col-lg-6 col-sm-12 col-xs-12">
-		<form:form method="post" id="custombuynowform" class="" action="${addToCartUrl}">
+		<form:form method="post" id="configureForm" class="" action="${addToCartUrl}">
 			<c:if test="${product.purchasable}">
 				<input type="hidden" maxlength="3" size="1" id="qty" name="qty" class="qty js-qty-selector-input" value="1">
 			</c:if>
